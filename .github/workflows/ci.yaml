@@ -27,7 +27,7 @@ jobs:
       with:
         node-version: 18.x
         cache: npm
-        cache-dependency-path: ./${{ matrix.app }}/package-lock.json
+        cache-dependency-path: ./topick/${{ matrix.app }}/package-lock.json
     - name: Setup
       run: ./${{ matrix.app }}/scripts/setup.sh
     - name: Build
