@@ -29,10 +29,10 @@ jobs:
         cache: npm
         cache-dependency-path: ./topick/${{ matrix.app }}/package-lock.json
     - name: Setup
-      run: ./${{ matrix.app }}/scripts/setup.sh
+      run: ./scripts/setup.sh
     - name: Build
-      run: ./${{ matrix.app }}/scripts/build.sh
+      run: ./scripts/build.sh
     - name: Unit tests
-      run: ./${{ matrix.app }}/scripts/unit-test.sh
+      run: ./scripts/unit-test.sh
     - name: Integration tests
-      run: ./${{ matrix.app }}/scripts/integration-test.sh
+      run: ./scripts/integration-test.sh
