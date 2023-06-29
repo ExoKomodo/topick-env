@@ -7,3 +7,10 @@
 - [Repository](https://github.com/ExoKomodo/topick-<ENV>)
 - [Topick UI](https://<ENV>.topick.fyi)
 
+## Updating topick
+
+Run `update.sh`
+
+```shell
+./update.sh
+```
